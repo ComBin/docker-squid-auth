@@ -1,7 +1,9 @@
 squid:
-  image: xico/squid:latest
+  image: ubuntu/squid
   ports:
     - "3128:3128"
   volumes:
     - /srv/docker/squid/cache:/var/spool/squid3
+    - ${PWD}/squid.conf:/etc/squid/squid.conf
+    - ${PWD}/squid-passwd:/etc/squid/squid-passwd
   restart: always
