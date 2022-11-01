@@ -1,6 +1,9 @@
 # docker-squid-auth
 Squid running on docker with authentication
 
+# Install requred packages
+```sudo apt install apache2-utils docker docker-compose git```
+
 # Clone this repo
 ```bash
 git clone https://github.com/fripoli/docker-squid-auth.git
@@ -9,9 +12,13 @@ git clone https://github.com/fripoli/docker-squid-auth.git
 # Create a squid-passwd file inside the cloned folder
 ```bash
 cd docker-squid-auth
-sudo yum install httpd-tools
 sudo htpasswd -c squid-passwd username_you_like
 ```
+
+# Just run
+```htpasswd -c squid-passwd <username>
+systemctl docker start
+docker-compose up -d```
 
 # Build docker image
 ```bash
