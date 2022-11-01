@@ -1,7 +1,7 @@
 squid:
   image: ubuntu/squid
   ports:
-    - "3128:3128"
+    - "8486:3128"
   volumes:
     - /srv/docker/squid/cache:/var/spool/squid3
     - ${PWD}/squid.conf:/etc/squid/squid.conf
