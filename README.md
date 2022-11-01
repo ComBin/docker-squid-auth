@@ -18,7 +18,8 @@ sudo htpasswd -c squid-passwd username_you_like
 # Just run
 ```htpasswd -c squid-passwd <username>
 systemctl docker start
-docker-compose up -d```
+docker-compose up -d
+```
 
 # Build docker image
 ```bash
