@@ -2,7 +2,7 @@
 Squid running on docker with authentication
 
 # Install requred packages
-```sudo apt install apache2-utils docker docker-compose git```
+```apt install apache2-utils docker docker-compose git```
 
 # Clone this repo
 ```bash
